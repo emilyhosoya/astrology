@@ -1,0 +1,40 @@
+.groups {
+	height: 320px;
+	width: 248px;
+}
+
+.svg {
+	height: 80px;
+	width: 80px;
+}
+
+
+/*Padding = .group width - plussign width / 2*/
+#plus {
+	padding: 90px 54px;
+}
+
+#plussign {
+	height: 140px;
+	width: 140px;
+}
+
+#equal {
+	padding: 90px 54px;
+}
+
+.equalsvg {
+	height: 140px;
+	width: 140px;
+}
+
+ul.img-list li {
+	height: 80px;
+	width: 80px;
+}
+
+/* Places text over the images */
+span.text-content {
+	height: 80px;
+	width: 80px;
+}

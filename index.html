@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 740px) and (max-width: 835px)" href="css/small-device.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 739px)" href="css/xs-device.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+	<title>Astrology Love Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+
+
+
+<body>
+<header>
+	<h1 class="text-center">astrology <3<br> <small>Pair groups and select = when <span style="color: rgb(236,61,130)">pink</span></small></h1>
+</header>
+
+
+<form>
+<main>
+<section class="firstgroup"> 
+	<div class="groups">
+		<ul class="img-list">
+			<li id="firstaries">
+				<input type="hidden" src="symbols/aries.svg" class="svg" name="first_sign" value="aries">
+				<span class="text-content"><span>Aries</span></span>
+			</li>
+			<li id="firsttaurus">
+				<input type="hidden" src="symbols/taurus.svg" class="svg" name="first_sign" value="taurus">
+				<span class="text-content"><span>Taurus</span></span>
+			</li>
+		<li id="firstgemini">
+				<input type="hidden" src="symbols/gemini.svg" class="svg" name="first_sign" value="gemini">
+				<span class="text-content"><span>Gemini</span></span>
+			</li>
+			<li id="firstcancer">
+				<input type="hidden" src="symbols/cancer.svg" class="svg" name="first_sign" value="cancer">
+				<span class="text-content"><span>Cancer</span></span>
+			</li>	
+			<li id="firstleo">
+				<input type="hidden" src="symbols/leo.svg" class="svg" name="first_sign" value="leo">
+				<span class="text-content"><span>Leo</span></span>
+			</li>
+			<li id="firstvirgo">
+				<input type="hidden" src="symbols/virgo.svg" class="svg" name="first_sign" value="virgo">
+				<span class="text-content"><span>Virgo</span></span>
+			</li>
+			<li id="firstlibra">
+				<input type="hidden" src="symbols/libra.svg" class="svg" name="first_sign" value="libra">
+				<span class="text-content"><span>Libra</span></span>
+			</li>
+			<li id="firstscorpio">
+				<input type="hidden" src="symbols/scorpio.svg" class="svg" name="first_sign" value="scorpio">
+				<span class="text-content"><span>Scorpio</span></span>
+			</li>
+			<li id="firstsagittarius">
+				<input type="hidden" src="symbols/sagittarius.svg" class="svg" name="first_sign" value="sagittarius">
+				<span class="text-content"><span>Sagittarius</span></span>
+			</li>
+			<li id="firstcapricorn">
+				<input type="hidden" src="symbols/capricorn.svg" class="svg" name="first_sign" value="capricorn">
+				<span class="text-content"><span>Capricorn</span></span>
+			</li>
+			<li id="firstaquarius">
+				<input type="hidden" src="symbols/aquarius.svg" class="svg" name="first_sign" value="aquarius">
+				<span class="text-content"><span>Aquarius</span></span>
+			</li>
+			<li id="firstpisces">
+				<input type="hidden" src="symbols/pisces.svg" class="svg" name="first_sign" value="pisces">
+				<span class="text-content"><span>Pisces</span></span>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<section class="middlegroup">
+	<div class="groups">
+		<div id="plus">
+			<img src="symbols/plus.svg" id="plussign">
+		</div>
+		<div id="equal" class="hidden">
+			<input type="hidden" onclick="ajaxFunction()" class="fancybox.ajax equalsvg" src="symbols/equal.svg">
+		</div>
+	</div>
+</section>
+
+
+<section class="secondgroup">
+	<div class="groups">
+		<ul class="img-list">
+			<li id="secondaries">
+				<input type="hidden" src="symbols/aries.svg" class="svg" name="second_sign" value="aries">
+				<span class="text-content"><span>Aries</span></span>
+			</li>
+			<li id="secondtaurus">
+				<input type="hidden" src="symbols/taurus.svg" class="svg" name="second_sign" value="taurus">
+				<span class="text-content"><span>Taurus</span></span>
+			</li>
+			<li id="secondgemini">
+				<input type="hidden" src="symbols/gemini.svg" class="svg" name="second_sign" value="gemini">
+				<span class="text-content"><span>Gemini</span></span>
+			</li>
+			<li id="secondcancer">
+				<input type="hidden" src="symbols/cancer.svg" class="svg" name="second_sign" value="cancer">
+				<span class="text-content"><span>Cancer</span></span>
+			</li>	
+			<li id="secondleo">
+				<input type="hidden" src="symbols/leo.svg" class="svg" name="second_sign" value="leo">
+				<span class="text-content"><span>Leo</span></span>
+			</li>
+			<li id="secondvirgo">
+				<input type="hidden" src="symbols/virgo.svg" class="svg" name="second_sign" value="virgo">
+				<span class="text-content"><span>Virgo</span></span>
+			</li>
+			<li id="secondlibra">
+				<input type="hidden" src="symbols/libra.svg" class="svg" name="second_sign" value="libra">
+				<span class="text-content"><span>Libra</span></span>
+			</li>
+			<li id="secondscorpio">
+				<input type="hidden" src="symbols/scorpio.svg" class="svg" name="second_sign" value="scorpio">
+				<span class="text-content"><span>Scorpio</span></span>
+			</li>
+			<li id="secondsagittarius">
+				<input type="hidden" src="symbols/sagittarius.svg" class="svg" name="second_sign" value="sagittarius">
+				<span class="text-content"><span>Sagittarius</span></span>
+			</li>
+			<li id="secondcapricorn">
+				<input type="hidden" src="symbols/capricorn.svg" class="svg" name="second_sign" value="capricorn">
+				<span class="text-content"><span>Capricorn</span></span>
+			</li>
+			<li id="secondaquarius">
+				<input type="hidden" src="symbols/aquarius.svg" class="svg" name="second_sign" value="aquarius">
+				<span class="text-content"><span>Aquarius</span></span>
+			</li>
+			<li id="secondpisces">
+				<input type="hidden" src="symbols/pisces.svg" class="svg" name="second_sign" value="pisces">
+				<span class="text-content"><span>Pisces</span></span>
+			</li>
+		</ul>
+	</div>
+</section>
+</main>
+</form>
+
+
+
+
+
+
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<script src="js/scripts.js"></script>
+
+
+</body>
+</html>

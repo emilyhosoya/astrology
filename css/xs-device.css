@@ -1,0 +1,27 @@
+/* Flex */
+main {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+}
+
+.firstgroup {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.secondgroup {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.middlegroup {
+	-webkit-flex: 1;
+	flex: 1;
+}
+

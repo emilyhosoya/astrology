@@ -1,0 +1,152 @@
+/* Font styles */
+h1 {
+	font-family: 'Raleway', 'sans-serif';
+	font-weight: 500;
+	padding-bottom: 50px;
+}
+
+h1 small {
+	font-family: 'Raleway', 'sans-serif';
+	font-weight: 400;
+}
+
+.text-content {
+	font-family: 'Raleway', 'sans-serif';
+	font-weight: 400;
+}
+
+
+
+
+
+
+/* Flexbox container */
+main {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+}
+
+.firstgroup, .secondgroup, .middlegroup {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.groups {
+	height: 380px;
+	width: 278px;
+	margin: auto;
+}
+
+
+
+
+/* Sign selection effect */
+
+.svg {
+	height: 90px;
+	width: 90px;
+}
+
+.selectedfirst {
+	fill: rgb(236,61,130);
+}
+
+.selectedsecond {
+	fill: rgb(236,61,130);
+}
+
+
+
+
+
+/* Plus to equal effect */
+/*Padding = .group width - plussign width / 2*/
+#plus {
+	padding: 90px 49px;
+}
+
+#plussign {
+	height: 180px;
+	width: 180px;
+}
+
+#equal {
+	padding: 90px 49px;
+	position: absolute;
+	z-index: 2;
+}
+
+.hidden {
+	display: none;
+}
+
+.equalsvg {
+	fill: rgb(236,61,130);
+	height: 180px;
+	width: 180px;
+}
+
+.equalsvg:hover {
+	cursor: pointer;
+}
+
+/*input[type=submit] {
+	background: url('http://localhost/astrology/symbols/equal.svg');
+	border: 0;
+	display: block;
+	height: 180px;
+	width: 180px;
+}*/
+
+
+
+/* Hover effect that changes images to text */
+/* Styles the images */
+ul.img-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 90px;
+	position: relative;
+	width: 90px;
+}
+
+/* Places text over the images */
+span.text-content {
+	background: rgba(255,255,255,1);
+	color: #777777;
+	cursor: pointer;
+	display: table;
+	height: 90px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 90px;
+	opacity: 0;
+	-webkit-transition: opacity 1ms;
+	-moz-transition: opacity 1ms;
+	-o-transition: opacity 1ms;
+	transition: opacity 1ms;
+}
+
+/* Shows text on hover */
+span.text-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+}
