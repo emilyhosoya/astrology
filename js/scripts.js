@@ -74,9 +74,6 @@ var firstsign10=false;
 var firstsign11=false;
 var firstsign12=false;
 
-var signs = {"leo": false,
-			"virgo": false};
-console.log(signs.leo);
 
 
 
